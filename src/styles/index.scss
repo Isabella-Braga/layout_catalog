@@ -4,6 +4,10 @@
 @import 'card';
 @import 'stars';
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: $font-main;
