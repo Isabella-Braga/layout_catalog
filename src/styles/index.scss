@@ -1,3 +1,37 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap';
+@import 'variables';
+@import 'header';
+@import 'card';
+@import 'stars';
+
 body {
   margin: 0;
+  font-family: $font-main;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: $card-width;
+
+  padding: $catalog-padding-vertical $catalog-padding-horizontal;
+
+  gap: $catalog-row-gap $catalog-column-gap;
+}
+
+@media (min-width: $tablet-small) {
+  .catalog {
+    grid-template-columns: repeat(2, $card-width);
+  }
+}
+
+@media (min-width: $tablet) {
+  .catalog {
+    grid-template-columns: repeat(3, $card-width);
+  }
+}
+
+@media (min-width: $desktop) {
+  .catalog {
+    grid-template-columns: repeat(4, $card-width);
+  }
 }
