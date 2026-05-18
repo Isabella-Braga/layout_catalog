@@ -1,7 +1,6 @@
 .card {
   box-sizing: border-box;
   width: $card-width;
-  height: 408px;
   padding: 16px;
 
   border: 1px solid $color-border;
@@ -10,17 +9,16 @@
   transition: transform 300ms;
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
   }
 
   &__image {
     display: block;
 
-    width: 100%;
+    width: 160px;
     height: 134px;
 
-    margin-top: 16px;
-    margin-bottom: 40px;
+    margin: 16px auto 40px;
 
     object-fit: contain;
   }
@@ -60,7 +58,7 @@
     justify-content: space-between;
     align-items: center;
 
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
 
   &__reviews {
