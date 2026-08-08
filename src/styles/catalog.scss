@@ -1,5 +1,6 @@
 .catalog {
   display: grid;
+  justify-content: center;
   grid-template-columns: $card-width;
 
   padding: $catalog-padding-vertical $catalog-padding-horizontal;
